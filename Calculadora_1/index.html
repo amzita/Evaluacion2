@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <meta name="description" content="Projeto Calculadora - Portifolio" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="calc">
+        <header>
+          <h1 class="title"></h1>
+        </header>
+
+    <p class="textArea-small"></p>
+    <div class="textArea">
+      <p class="textArea-big"></p>
+      <div class="barArea">
+        <div class="bar"></div>
+      </div>
+    </div>
+    <main>
+      <div class="numbers">
+        <div class="line">
+          <div onclick="clean('clear')" class="num">C</div>
+          <div onclick="account('%')" class="num">%</div>
+          <div onclick="clean('CE')" class="num">DEL</div>
+        </div>
+        <div class="line">
+          <div onclick="getNumbers('7')" class="num">7</div>
+          <div onclick="getNumbers('8')" class="num">8</div>
+          <div onclick="getNumbers('9')" class="num">9</div>
+          <div onclick="account('/')" class="num gray">/</div>
+        </div>
+        <div class="line">
+          <div onclick="getNumbers('4')" class="num">4</div>
+          <div onclick="getNumbers('5')" class="num">5</div>
+          <div onclick="getNumbers('6')" class="num">6</div>
+          <div onclick="account('*')" class="num gray">*</div>
+        </div>
+        <div class="line">
+          <div onclick="getNumbers('1')" class="num">1</div>
+          <div onclick="getNumbers('2')" class="num">2</div>
+          <div onclick="getNumbers('3')" class="num">3</div>
+          <div onclick="account('-')" class="num gray">-</div>
+        </div>
+        <div class="line">
+          <div onclick="getNumbers('0')" class="num">0</div>
+          <div onclick="getNumbers('.')" class="num">.</div>
+          <div onclick="calculate('=')" class="num orange">=</div>
+          <div onclick="account('+')" class="num gray">+</div>
+        </div>
+      </div>
+  </div>
+  </main>
+  
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
